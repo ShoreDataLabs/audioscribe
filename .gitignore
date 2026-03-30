@@ -1,0 +1,41 @@
+# Transcription output
+output/*
+!output/.gitkeep
+
+# Audio files
+*.m4a
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+*.wma
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Whisper model cache
+models/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# AI coding agent configs (local skills/rules)
+.claude/
+.cursor/
+.orchestra-skills.json
