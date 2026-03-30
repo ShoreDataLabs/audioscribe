@@ -17,7 +17,7 @@ A local CLI tool that transcribes audio files to clean, structured text using [O
 ========================================
  TRANSCRIPTION
 ========================================
- File     : interview.mp3
+ File     : recording.mp3
  Date     : 2026-03-30
  Duration : 42:02
  Language : en
@@ -68,7 +68,7 @@ brew install ffmpeg
 ### Transcribe a single file
 
 ```bash
-python transcribe.py audio/interview.mp3
+python transcribe.py audio/recording.mp3
 ```
 
 ### Transcribe a whole folder
@@ -95,10 +95,10 @@ options:
 
 ```bash
 # Use a larger model for better accuracy
-python transcribe.py interview.mp3 --model large
+python transcribe.py recording.mp3 --model large
 
 # Skip language detection for faster processing
-python transcribe.py interview.mp3 --language en
+python transcribe.py recording.mp3 --language en
 
 # Batch transcribe with custom output directory
 python transcribe.py recordings/ --batch --output ./transcripts
